@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+<input id="input" type="number" oninput="disPlay()" placeholder="Enter A Number">
+<p id="result"></p>
+<script>
+    function plusOne(x) {
+        x = x +1;
+        return x;
+    }
+    function disPlay() {
+        let number =parseInt(document.getElementById('input').value);
+        result= plusOne(number);
+        document.getElementById("result").innerHTML = result;
+    }
+</script>
+</body>
+</html>
